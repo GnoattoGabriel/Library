@@ -1,7 +1,6 @@
 package com.gnoatto.library.Models;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name = "tb_livro")
@@ -9,14 +8,16 @@ public class LivroModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
-    Long id;
+    private Long id;
 
     @Column(name = "titulo")
-    String titulo;
+    private String titulo;
 
     @Column(name = "autor")
-    String autor;
-    Integer anoPublicacao;
+    private String autor;
+
+    @Column(name = "ano_publicacao")
+    private Integer anoPublicacao;
 
     public LivroModel(){
     }
