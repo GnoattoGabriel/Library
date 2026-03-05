@@ -41,4 +41,7 @@ public class LivroController {
     public LivroModel atualizarLivro(@PathVariable Long id,@RequestBody LivroModel livroNovo){
         return livroService.atualizarLivro(id, livroNovo);
     }
+
+
+
 }
